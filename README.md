@@ -28,7 +28,7 @@ async function testResult() {
     console.log('Шаг 5: ввод в поле Message');
     const descriptionInput = await page.$('#description');
     await descriptionInput.type('Напишите мне на почту');
-    console.log('Шаг 6: клик на кпоку');
+    console.log('Шаг 6: клик на кнопку');
     const btnSubmit = await page.$('#submitContact');
     await btnSubmit.click();
     await page.screenshot({path:'testResult.png'});
